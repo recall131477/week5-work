@@ -1,0 +1,38 @@
+.btn {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: $white;
+  border: 1px solid $primary;
+  transition: background-color .3s;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+.btn-primary-outline {
+  border: 1px solid $primary;
+  color: $primary;
+  transition: background-color .3s , color .3s;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.btn-danger-outline {
+  border: 1px solid $danger;
+  color: $danger;
+  transition: background-color .3s , color .3s;
+  &:hover {
+    background-color: $danger;
+    color: $white;
+  }
+}

@@ -1,0 +1,63 @@
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: $gray-100;
+  padding: 1rem;
+}
+
+.form-control--gray-200 {
+  background-color: $white;
+  border: 1px solid $gray-200;
+  transition: background-color .3s,color .3s;
+  &:hover {
+    background-color: $gray-200;
+    color: $white;
+  }
+}
+
+.form-control--danger {
+  background-color: $white;
+  border: 1px solid $danger;
+  transition: background-color .3s,color .3s;
+  &:hover {
+    background-color: $danger;
+    color: $white;
+  }
+}
+
+.form-selcet {
+  border: 1px solid $gray-400;
+  padding: 1rem;
+  border-radius: 2px;
+  select {
+    width: 100%;
+  }
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  input[type="checkbox"] {
+    display: none;
+    &:checked {
+      ~ .checkbox__status {
+        background-image: url(../images/check.svg);
+        @include bg;
+      }
+    }
+  }
+}
+
+.checkbox__status {
+  display: block;
+  background-color: $white;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $gray-400;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+}

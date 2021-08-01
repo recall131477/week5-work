@@ -1,0 +1,62 @@
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.section {
+  display: none;
+}
+
+// Assignment
+
+.matter {
+  border: 1px solid $gray-200;
+}
+
+.matter__list {
+  border-top: 1px solid $gray-200;
+  padding: 1rem;
+}
+
+.matter__item {
+  display: flex;
+  >img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.matter__info {
+  flex: 1;
+}
+
+// Assignment end
+
+// Admin
+.admin-list {
+  margin-bottom: 4rem;
+}
+
+.admin-list__id {
+  width: 12%;
+}
+
+.admin-list__name {
+  width: 25%;
+} 
+
+.admin-list__email {
+  width: 34%;
+}
+
+.admin-list__verified {
+  width: 18%;
+}
+
+.admin-list__icon {
+  width: 11%;
+}
+
+// Admin end

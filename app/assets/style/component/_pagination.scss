@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  li {
+    border: 1px solid $primary;
+    &:not(:last-child) {
+      border-right: none;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    transition: background-color .3s,color .3s;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      i {
+        color: $white;
+      }
+    }
+  }
+  i {
+    color: $primary;
+  }
+}
